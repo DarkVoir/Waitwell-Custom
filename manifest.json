@@ -2,12 +2,13 @@
   "manifest_version": 3,
   "name": "Waitwell Custom Layout",
   "version": "1.0",
-  "description": "Adjusts Waitwell UI locally.",
+  "description": "Custom UI modifications for the Waitwell dashboard.",
   "content_scripts": [
     {
-      "matches": ["https://app.waitwell.ca/queue"], 
+      "matches": ["https://*.waitwell.com/*"],
       "css": ["styles.css"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ]
 }
