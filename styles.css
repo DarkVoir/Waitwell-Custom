@@ -1,11 +1,10 @@
-/* 1. Main Screen Container - Example of changing to a grid layout */
-.your-main-container-class-here {
-    display: grid !important;
-    grid-template-columns: 2fr 1fr !important; /* 70% left panel, 30% right panel */
-    gap: 20px !important;
+/* Example: Resizing a target panel */
+ion-card.ticket-queue-panel {
+  width: 100% !important;
+  max-width: 800px !important;
 }
 
-/* 2. Target Panels - Example of forcing a specific height or hiding an element */
-.your-unwanted-panel-class-here {
-    display: none !important; /* Hides elements you don't want to see */
+/* Example: Hiding an unnecessary sidebar */
+ion-split-pane > ion-menu {
+  display: none !important;
 }
