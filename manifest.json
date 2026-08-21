@@ -5,7 +5,7 @@
   "description": "Custom UI modifications for the Waitwell dashboard.",
   "content_scripts": [
     {
-      "matches": ["https://*.waitwell.com/*"],
+      "matches": ["https://app.waitwell.ca/*"],
       "css": ["styles.css"],
       "js": ["content.js"],
       "run_at": "document_idle"
